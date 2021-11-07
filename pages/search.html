@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="../style/search.css"/>
+    <link rel="stylesheet" type="text/css" href="../style/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../style/footer.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="navbar">
+            <div class="navbar_items">
+                <a href="registration.html">Register</a>
+            </div>
+            <div class="navbar_items active">
+                <a href="search.html">Search</a>
+            </div>
+            <div class="navbar_items">
+                <a href="submission.html">Submission</a>
+            </div>
+            <div class="navbar_items">
+                <a href="individual_sample.html">Individual</a>
+            </div>
+        </div>
+    </div>
+    <div class="search_warp">
+        <div class="search_box animate__animated animate__zoomInDown">
+            <h3>Search 🔍</h3>
+            <!--  Search form -->
+            <form>
+                <input type="text" placeholder="Search for attractions food parks...">
+                <!-- select box -->
+                <div class="select">
+                    <select>
+                        <option value="five_stars">five_stars</option>
+                        <option value="four_stars">four_stars</option>
+                        <option value="three_stars">three_stars</option>
+                        <option value="two_stars">two_stars</option>
+                        <option value="one_star">one_star</option>
+                    </select>
+                </div>
+                <div class="secondary search_button">
+                    <button type="button" onclick="getLocation()">Location</button>
+                </div>
+                <div class="primary search_button ">
+                    <button type="button" onclick="search()">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">footer</div>
+</div>
+</body>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+</html>

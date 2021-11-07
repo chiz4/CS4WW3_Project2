@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+}
+
+
+
+/* Wrap the div of the form */
+.sub_form {
+    width: 60%;
+    margin: 0 20% 50px 20%;
+    color: rgb(53, 54, 58);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_form h3 {
+    text-align: center;
+}
+
+textarea {
+    height: 100px;
+    width: 95%;
+}
+
+/* form */
+.sub_form form {
+    width: 60%;
+    background-color: #f8f8f9;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px 0;
+}
+
+/* sub_title headline */
+.sub_title {
+    background-color: rgb(73, 168, 245);
+    margin-top: 25px;
+    height: 50px;
+    font: 13px bolder;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+/* The style of the input box */
+input {
+    border: 1px solid rgb(196, 199, 206);
+    border-radius: 5px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(78, 110, 242);
+}
+
+/* Button style */
+button {
+    margin: 0 auto;
+    width: 80%;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: rgb(66, 165, 245);
+    color: white;
+    border: white 1px solid;
+}
+
+button:hover {
+    background-color: rgb(69, 183, 254);
+    cursor: pointer;
+}
+
+.badge {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.badge span {
+    background-color: #dcdee2;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+@media screen and (max-width: 375px) {
+    /* Wrap the div of the form */
+    .sub_form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: rgb(53, 54, 58);
+        border-radius: 20px;
+        margin: 0 5% 50px 5%;
+    }
+
+    /* form */
+    .sub_form form {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
